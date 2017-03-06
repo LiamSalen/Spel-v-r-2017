@@ -15,7 +15,9 @@ public class AiZ : MonoBehaviour
 
     void Update()
     {
+        //Targets the player
         target = GameObject.FindWithTag("Player").transform;
+
         //rotate to look at the player
         transform.LookAt(target.position);
         transform.Rotate(new Vector3(0, -90, 0), Space.Self);//correcting the original rotation

@@ -12,7 +12,7 @@ public class Movement : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        if (Input.GetKey(KeyCode.A))
+       if (Input.GetKey(KeyCode.A))
         {
             transform.Translate(Vector2.left * movementspeed * Time.deltaTime);
         }
