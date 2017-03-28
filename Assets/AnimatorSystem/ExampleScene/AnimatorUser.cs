@@ -37,11 +37,11 @@ public class AnimatorUser : MonoBehaviour {
 			anim2D.Switch ("Punch");
 		}
 
-		if (Input.GetKeyDown (KeyCode.T))
+		if (Input.GetMouseButtonDown (0))
 		{
-			anim2D.Switch ("Punch");
-			anim2D.QueueAnimation ("Punch");
-			anim2D.QueueAnimation ("Punch");
+			anim2D.Switch ("Shoot");
+			anim2D.QueueAnimation ("Shoot");
+			anim2D.QueueAnimation ("Shoot");
 		}
 
 		if (Input.GetKeyDown (KeyCode.P))
@@ -59,9 +59,9 @@ public class AnimatorUser : MonoBehaviour {
 		if (Input.GetKeyDown (KeyCode.A) || Input.GetKeyDown (KeyCode.D))
 		{
 			if(Input.GetKeyDown (KeyCode.A))
-				transform.localScale = new Vector3 (1, 1, 1);
+				transform.localScale = new Vector3 (-0.22f, 0.12f, 1);
 			else
-				transform.localScale = new Vector3 (-1, 1, 1);
+				transform.localScale = new Vector3 (0.22f, 0.12f, 1);
 
 			anim2D.Switch ("Run");
 			anim2D.SetDefault ("Run");
